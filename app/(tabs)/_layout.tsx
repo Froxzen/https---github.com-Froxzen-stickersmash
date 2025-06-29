@@ -12,6 +12,12 @@ export default function TabLayout() {
         name="index"
         options={{
           title: "Home",
+          headerStyle: {
+            backgroundColor: "#25292e",
+          },
+          headerTitleStyle: {
+            color: "white",
+          },
           tabBarIcon: ({ color, focused }) => (
             <Ionicons
               name={focused ? "home-sharp" : "home-outline"}

@@ -26,6 +26,18 @@ export default function Index() {
     }
   };
 
+  const onReset = () => {
+    setShowAppOptions(false);
+  }
+
+  const onAddSticker = () => {
+
+  }
+
+  const onSaveImageAsync = async () => {
+
+  }
+
   return (
     <View style={styles.container}>
       <View style={styles.imageContainer}>
@@ -35,7 +47,11 @@ export default function Index() {
         />
       </View>
       {showAppOptions ? (
-        <View />
+        <View style={styles.optionsContainer}>
+          <View style={styles.optionsRow}>
+            
+          </View>
+        </View>
       ) : (
         <View style={styles.footerContainer}>
           <Button
@@ -72,4 +88,12 @@ const styles = StyleSheet.create({
     flex: 1 / 3,
     alignItems: "center",
   },
+  optionsContainer: {
+    position: 'absolute',
+    bottom: 80
+  },
+  optionsRow: {
+    alignItems: 'center',
+    flexDirection: 'row'
+  }
 });
